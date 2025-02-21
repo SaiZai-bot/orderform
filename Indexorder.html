@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vitality Tea | Home</title>
+    <link rel="stylesheet" href="styleorder.css">
+    <link rel="shortcut icon" href="./image/dffg.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="headerbar">
+                <div class="account">
+                    <ul>
+                        <a href="">
+                            <li>
+                                <i class="fa-solid fa-house-chimney"></i>
+                            </li>
+                        </a>
+                        <a href="#" id="searchicon1">
+                            <li>
+                                <i class="fa-solid fa-magnifying-glass searchicon"></i>
+                            </li>
+                        </a>
+                        <div class="search" id="searchinput1">
+                            <input type="search" placeholder="Search...">
+                            <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                        </div>
+                        <a href="">
+                            <li>
+                                <i class="fa-solid fa-user" id="user-mb"></i>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <a href="">
+                            <li>Home</li>
+                        </a>
+                        <a href="">
+                            <li>Service</li>
+                        </a>
+                        <a href="">
+                            <li>Menu</li>
+                        </a>
+                        <a href="">
+                            <li>Order</li>
+                        </a>
+                        <a href="">
+                            <li>About</li>
+                        </a>
+                        <a href="">
+                            <li>Contact</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="logo">
+                <img src="./image/Logo.png" alt="logo">
+            </div>
+
+            <div class="bar">
+                <i class="fa-solid fa-bars"></i>
+                <i class="fa-solid fa-xmark" id="hdcross"></i>
+            </div>
+
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="service.html">Service</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="account">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-house-chimney"></i></a></li>
+                    <li><a href="#" id="searchicon2"><i class="fa-solid fa-magnifying-glass"></i></a></li>
+                    <div class="search" id="searchinput2">
+                        <input type="search" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass srchicon"></i>
+                    </div>
+                    <li><a href="#"><i class="fa-solid fa-user" id="user-mb"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+<!-- 
+  for my order form -->
+
+  <section class="order-form">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+        <table>
+            <thead>
+                <tr>
+                    <th>Item</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Subtotal</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Milk Tea</td>
+                    <td>₱100</td>
+                    <td><input type="number" min="0" value="0" class="quantity" data-price="100"></td>
+                    <td class="subtotal">₱0</td>
+                </tr>
+                <tr>
+                    <td>Fruit Tea</td>
+                    <td>₱80</td>
+                    <td><input type="number" min="0" value="0" class="quantity" data-price="80"></td>
+                    <td class="subtotal">₱0</td>
+                </tr>
+                <tr>
+                    <td>Matcha</td>
+                    <td>₱120</td>
+                    <td><input type="number" min="0" value="0" class="quantity" data-price="120"></td>
+                    <td class="subtotal">₱0</td>
+                </tr>
+            </tbody>
+        </table>
+        <h3>Bill Details</h3>
+        <h4>Total: <span id="totalPrice">₱0</span></h4>
+        <h5>Service Charge: <span id="servicecharge">₱0</span></h5>
+        <h5>delivery Fee: <span id="deliveryfee">₱0</span></h5>
+        
+        <button type="submit">Submit Order</button>
+    </form>
+</section>
+
+<div id="signupModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sign Up</h2>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" placeholder="Enter your password" required>
+        <button id="confirmOrder">Confirm Order</button>
+    </div>
+</div>
+
+<!-- 
+end of order form -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h4>About Us</h4>
+                <p>Your reliable source for quality products and services.</p>
+            </div>
+            <div class="footer-section links">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h4>Follow Us</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2025 Your Company | All Rights Reserved
+        </div>
+    </footer>
+    
+    
+    
+    </div>
+
+    </div>
+    
+
+    <script src="scriptorder.js"></script>
+</body>
+</html>
