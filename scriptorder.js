@@ -59,6 +59,52 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const categories = document.querySelectorAll('.category');
+
+    // Show only the selected category
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function() {
+            const categoryToShow = this.getAttribute('data-category');
+
+            // Hide all categories
+            categories.forEach(category => {
+                category.classList.remove('active');
+            });
+
+            // Show the selected category
+            document.getElementById(categoryToShow).classList.add('active');
+        });
+    });
+});
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const categoryButtons = document.querySelectorAll('.category-btn');
+    const categories = document.querySelectorAll('.category');
+
+    categoryButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const categoryToShow = this.getAttribute('data-category');
+
+            // Remove active class from all buttons
+            categoryButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Hide all categories
+            categories.forEach(category => category.classList.remove('active'));
+
+            // Add active class to the clicked button
+            this.classList.add('active');
+
+            // Show the selected category
+            document.getElementById(categoryToShow).classList.add('active');
+        });
+    });
+
+    // Set the default active button on page load
+    categoryButtons[0].classList.add('active');
+});
 
 
 // end of order script

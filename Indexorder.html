@@ -61,7 +61,7 @@
             </div>
 
             <div class="logo">
-                <img src="./image/Logo.png" alt="logo">
+                <img src="Company_logo.png" alt="logo">
             </div>
 
             <div class="bar">
@@ -98,37 +98,143 @@
 
   <section class="order-form">
     <h2>Place Your Order</h2>
+
+    <div class="category-buttons">
+        <button class="category-btn" data-category="hot-drinks">Hot Drinks</button>
+        <button class="category-btn" data-category="cold-drinks">Cold Drinks</button>
+        <button class="category-btn" data-category="sandwiches">Sandwiches</button>
+    </div>
+
     <form id="orderForm">
+    <div id="hot-drinks" class="category active">
+        <h3>Hot Drinks</h3>
         <table>
-            <thead>
-                <tr>
-                    <th>Item</th>
-                    <th>Price</th>
-                    <th>Quantity</th>
-                    <th>Subtotal</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Milk Tea</td>
-                    <td>₱100</td>
-                    <td><input type="number" min="0" value="0" class="quantity" data-price="100"></td>
-                    <td class="subtotal">₱0</td>
-                </tr>
-                <tr>
-                    <td>Fruit Tea</td>
-                    <td>₱80</td>
-                    <td><input type="number" min="0" value="0" class="quantity" data-price="80"></td>
-                    <td class="subtotal">₱0</td>
-                </tr>
-                <tr>
-                    <td>Matcha</td>
-                    <td>₱120</td>
-                    <td><input type="number" min="0" value="0" class="quantity" data-price="120"></td>
-                    <td class="subtotal">₱0</td>
-                </tr>
-            </tbody>
+            <tr>
+                <td>Hot Almond N Cream - ₱250</td>
+                <td><input type="number" class="quantity" data-price="250" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Hot Cranberry Cider - ₱220</td>
+                <td><input type="number" class="quantity" data-price="220" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Comforting Coffee Milk - ₱180</td>
+                <td><input type="number" class="quantity" data-price="180" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Orange Spiced Cider - ₱200</td>
+                <td><input type="number" class="quantity" data-price="200" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Irish Coffee - ₱270</td>
+                <td><input type="number" class="quantity" data-price="270" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            
         </table>
+    </div>
+    
+    <div id="cold-drinks" class="category">
+        <h3>Cold Drinks</h3>
+        <table>
+            <tr>
+                <td>Kale Smoothie with Pineapple and Banana - ₱220</td>
+                <td><input type="number" class="quantity" data-price="220" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Watermelon Frozen Slushie - ₱180</td>
+                <td><input type="number" class="quantity" data-price="180" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Kombucha-Frozen Orange Mule - ₱240</td>
+                <td><input type="number" class="quantity" data-price="240" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Vietnamese Iced Coffee - ₱200</td>
+                <td><input type="number" class="quantity" data-price="200" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Tropical Mango Juice - ₱190</td>
+                <td><input type="number" class="quantity" data-price="190" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>High Protein Banana Smoothie - ₱230</td>
+                <td><input type="number" class="quantity" data-price="230" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Buko Pandan Float - ₱210</td>
+                <td><input type="number" class="quantity" data-price="210" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+        </table>
+    </div>
+    
+    <div id="sandwiches" class="category">
+        <h3>Sandwiches</h3>
+        <table>
+            <tr>
+                <td>Caramelized Onion Cheeseburgers - ₱320</td>
+                <td><input type="number" class="quantity" data-price="320" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Ultimate Reuben Grilled Cheese - ₱280</td>
+                <td><input type="number" class="quantity" data-price="280" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Grilled Beef & Broccoli Wraps - ₱260</td>
+                <td><input type="number" class="quantity" data-price="260" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Pancake Hamburger with Bacon - ₱300</td>
+                <td><input type="number" class="quantity" data-price="300" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>8pcs of Beef Empanada - ₱240</td>
+                <td><input type="number" class="quantity" data-price="240" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Cheesy Shrimp Sandwich - ₱310</td>
+                <td><input type="number" class="quantity" data-price="310" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Overloaded Tuna Sandwich - ₱270</td>
+                <td><input type="number" class="quantity" data-price="270" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Club Meatball Subs - ₱290</td>
+                <td><input type="number" class="quantity" data-price="290" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>Juicy Cheese steak - ₱350</td>
+                <td><input type="number" class="quantity" data-price="350" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            <tr>
+                <td>hungarian chili dog - ₱280</td>
+                <td><input type="number" class="quantity" data-price="280" min="0"></td>
+                <td class="subtotal">₱0</td>
+            </tr>
+            
+        </table>
+    </div>
         <h3>Bill Details</h3>
         <h4>Total: <span id="totalPrice">₱0</span></h4>
         <h5>Service Charge: <span id="servicecharge">₱0</span></h5>
