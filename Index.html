@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
+
     <header>
         <div class="header">
             <div class="headerbar">
@@ -61,7 +62,7 @@
             </div>
 
             <div class="logo">
-                <img src="Company_logo.png" alt="logo">
+                <img src="Company_logo2.png" alt="logo">
             </div>
 
             <div class="bar">
@@ -100,9 +101,9 @@
     <h2>Place Your Order</h2>
 
     <div class="category-buttons">
-        <button class="category-btn" data-category="hot-drinks">Hot Drinks</button>
-        <button class="category-btn" data-category="cold-drinks">Cold Drinks</button>
-        <button class="category-btn" data-category="sandwiches">Sandwiches</button>
+        <div class="tab active" onclick="showMenu('hot-drinks')">☕ Warm Drinks</div>
+        <div class="tab" onclick="showMenu('cold-drinks')">🥤 Cold Drinks</div>
+        <div class="tab" onclick="showMenu('sandwiches')">🥪 Sandwiches</div>
     </div>
 
     <form id="orderForm">
@@ -256,8 +257,8 @@
     </div>
 </div>
 
-<!-- 
-end of order form -->
+    <!-- 
+    end of order form -->
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-section about">
